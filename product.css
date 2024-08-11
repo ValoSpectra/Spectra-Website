@@ -73,3 +73,27 @@
     }
   }
   
+  .maxHeight {
+    max-height: 100%;
+  }
+
+  .img-normal {
+    max-height: 260px;
+    aspect-ratio: 1;
+    align-self: center;
+    margin: auto;
+  }
+
+  .img-round {
+    border-radius: 50% 50% 50% 50%;
+    max-height: 260px;
+    aspect-ratio: 1;
+    align-self: center;
+    margin: auto;
+  }
+
+  .img-background {
+    background-image: url("https://dnkl.gg/T71DY");
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
