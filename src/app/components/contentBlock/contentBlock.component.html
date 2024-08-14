@@ -1,0 +1,22 @@
+<div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">{{title}}</h2>
+        <p class="lead">{{subtitle}}</p>
+    </div>
+    <div class="text-bg-dark shadow-sm mx-auto container row align-items-center"
+        style="width: 80%; height: 300px; border-radius: 21px 21px 21px 21px;">
+        <div class="col-6 me-auto">
+            <a class="image-link" href="{{link}}" target="{{target}}">
+                <img src="{{image}}" class="img-fluid image" [class.round]="roundImage"/>
+                <svg class="bi image" width="auto" height="100%" *ngIf="image == ''">
+                    <use xlink:href="#aperture" />
+                </svg>
+            </a>
+        </div>
+        <div class="col-6">
+            <p class="lead">
+                {{text}}
+            </p>
+        </div>
+    </div>
+</div>
