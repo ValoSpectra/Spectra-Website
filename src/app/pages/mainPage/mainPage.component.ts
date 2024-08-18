@@ -6,11 +6,12 @@ import { FooterBarComponent } from '../../components/footerBar/footerBar.compone
 import { CoverComponent } from '../../components/coverComponent/coverComponent.component';
 import { ContentHeroComponent } from '../../components/content-hero/content-hero.component';
 import { ContentDividerComponent } from '../../components/content-divider/content-divider.component';
+import { FeaturesComponent } from '../../components/features/features.component';
 
 @Component({
   selector: 'page-MainPage',
   standalone: true,
-  imports: [RouterOutlet, NavBarComponent, ContentBlockComponent, FooterBarComponent, CoverComponent, ContentHeroComponent, ContentDividerComponent],
+  imports: [RouterOutlet, NavBarComponent, ContentBlockComponent, FooterBarComponent, CoverComponent, ContentHeroComponent, ContentDividerComponent, FeaturesComponent],
   templateUrl: './mainPage.component.html',
   styleUrl: './mainPage.component.scss'
 })
