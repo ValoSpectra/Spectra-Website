@@ -7,10 +7,10 @@
 }
 
 .cover-backdrop {
-    background-image: url("https://dnkl.gg/T71DY");
+    background-image: url(/assets/backgrounds/background_preview.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: 50%;
+    background-size: contain;
+    background-position: 50%;
 }
 
 .cover-content {
