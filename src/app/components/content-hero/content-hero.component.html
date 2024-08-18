@@ -1,18 +1,24 @@
 <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="row align-items-center g-5 py-5" [class]="imagePos == 'left' ? 'flex-lg-row' : 'flex-lg-row-reverse'">
         <div class="col-10 col-sm-8 col-lg-6">
-            <img src="https://dnkl.gg/T71DY" class="d-block mx-lg-auto img-fluid" alt="Spectra Overlay Preview"
-                width="700" height="500" loading="lazy">
+            <img *ngIf="imageSrc" src="{{imageSrc}}" class="d-block mx-lg-auto img-fluid" alt="{{imageAlt}}" width="700"
+                height="500" loading="lazy">
+            <svg *ngIf="!imageSrc" class="d-block mx-lg-auto img-fluid">
+                <use xlink:href="#aperture" />
+            </svg>
         </div>
         <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Spectra - Live Overlay for Valorant</h1>
-            <p class="lead">Spectra is a system designed to upgrade your Valorant tournament's production quality with a
-                spiffy overlay. Powered by Overwolf, only an observer needs to run the software provided - and Spectra
-                delivers live data to our website, ready to be integrated into a video stream!
-            </p>
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">{{title}}</h1>
+            <p class="lead">{{content}}</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Watch a demo</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">How it works</button>
+                <a href="{{button1Href}}" target="{{button1Target}}">
+                    <button *ngIf="button1Text" type="button"
+                        class="btn btn-primary btn-lg px-4 me-md-2">{{button1Text}}</button>
+                </a>
+                <a href="{{button2Href}}" target="{{button1Target}}">
+                    <button *ngIf="button2Text" type="button"
+                        class="btn btn-outline-secondary btn-lg px-4">{{button2Text}}</button>
+                </a>
             </div>
         </div>
     </div>
