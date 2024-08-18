@@ -35,58 +35,37 @@
                 d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
         </symbol>
     </svg>
-    
+
     <div class="h-100 d-flex flex-column">
         <comp-NavBar></comp-NavBar>
         <comp-coverComponent class="flex-fill"></comp-coverComponent>
     </div>
 
-    
-    <main>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center text-bg-dark img-background" >
-        <div class="col-md-6 p-lg-5 mx-auto my-5">
-            <h1 class="display-3 fw-bold text-light">Spectra</h1>
-            <h3 class="fw-normal mb-3 text-light">The spectator overlay for Valorant</h3>
-        </div>
-    </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <comp-ContentBlock
-            title="Demo"
-            subtitle="See what Spectra can do"
-            link="https://youtu.be/mfrWiVP_8V8?si=o7hkXXpxD1oRKiWB&t=719"
-            target="_blank"
-            image="assets/profile-pictures/yt_icon_rgb.png"
-            text="Watch a demonstration of what Spectra does and what it looks like, taken from the Underpeel lower finals."
-        ></comp-ContentBlock>
-        <comp-ContentBlock
-            title="Join our discord server"
-            subtitle="For questions and support"
-            link="https://discord.gg/nWWXqqK6tz"
-            target="_blank"
-            image="assets/profile-pictures/discord-mark-blue.png"
-            text="Want to try it out yourself? Have a burning question? Find us on our Discord server and send a message!"
-        ></comp-ContentBlock>
-    </div>
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <comp-ContentBlock
-            title="Credits"
-            subtitle="Everyone who helped build Spectra"
-            link="./credits/"
-            target="_self"
-            image=""
-            text="Discover what went into making Spectra as well as everyone who contributed."
-        ></comp-ContentBlock>
-        <comp-ContentBlock
-            title="GitHub Repository"
-            subtitle="Completely open-source"
-            link="https://github.com/orgs/ValoSpectra/repositories"
-            target="_blank"
-            image="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
-            roundImage
-            text="The entire project can be found on GitHub. Go take a look!"
-        ></comp-ContentBlock>
-    </div>
+    <main>
+        <comp-contentDivider></comp-contentDivider>
+        <comp-contentHero></comp-contentHero>
+        <comp-contentDivider></comp-contentDivider>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+            <comp-ContentBlock title="Demo" subtitle="See what Spectra can do"
+                link="https://youtu.be/mfrWiVP_8V8?si=o7hkXXpxD1oRKiWB&t=719" target="_blank"
+                image="assets/profile-pictures/yt_icon_rgb.png"
+                text="Watch a demonstration of what Spectra does and what it looks like, taken from the Underpeel lower finals."></comp-ContentBlock>
+            <comp-ContentBlock title="Join our discord server" subtitle="For questions and support"
+                link="https://discord.gg/nWWXqqK6tz" target="_blank"
+                image="assets/profile-pictures/discord-mark-blue.png"
+                text="Want to try it out yourself? Have a burning question? Find us on our Discord server and send a message!"></comp-ContentBlock>
+        </div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+            <comp-ContentBlock title="Credits" subtitle="Everyone who helped build Spectra" link="./credits/"
+                target="_self" image=""
+                text="Discover what went into making Spectra as well as everyone who contributed."></comp-ContentBlock>
+            <comp-ContentBlock title="GitHub Repository" subtitle="Completely open-source"
+                link="https://github.com/orgs/ValoSpectra/repositories" target="_blank"
+                image="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" roundImage
+                text="The entire project can be found on GitHub. Go take a look!"></comp-ContentBlock>
+        </div>
     </main>
 
     <comp-FooterBar></comp-FooterBar>
