@@ -1,0 +1,18 @@
+.cover-container {
+    margin: auto;
+    max-width: 42em;
+    max-height: 24em;
+    background-color: rgba($color: gray, $alpha: 0.7);
+    border-radius: 8em;
+}
+
+.cover-backdrop {
+    background-image: url("https://dnkl.gg/T71DY");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+}
+
+.cover-content {
+    align-content: center;
+}

@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from '../../components/navBar/navBar.component';
 import { ContentBlockComponent } from '../../components/contentBlock/contentBlock.component';
 import { FooterBarComponent } from '../../components/footerBar/footerBar.component';
+import { CoverComponent } from '../../components/coverComponent/coverComponent.component';
 
 @Component({
   selector: 'page-MainPage',
   standalone: true,
-  imports: [RouterOutlet, NavBarComponent, ContentBlockComponent, FooterBarComponent],
+  imports: [RouterOutlet, NavBarComponent, ContentBlockComponent, FooterBarComponent, CoverComponent],
   templateUrl: './mainPage.component.html',
   styleUrl: './mainPage.component.scss'
 })
