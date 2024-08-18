@@ -1,16 +1,16 @@
 <div class="container col-xxl-8 px-4 py-5">
     <div class="row align-items-center g-5 py-5" [class]="imagePos == 'left' ? 'flex-lg-row' : 'flex-lg-row-reverse'">
         <div class="col-10 col-sm-8 col-lg-6">
-            <img *ngIf="imageSrc" src="{{imageSrc}}" class="d-block mx-lg-auto img-fluid" alt="{{imageAlt}}" width="700"
+            <img *ngIf="imageSrc" src="{{imageSrc}}" class="d-block mx-lg-auto img-fluid" [class.img-round]="imageProfile" [class.img-dark-background]="imageDarkBackground" alt="{{imageAlt}}" [width]="imageProfile ? 400 : 700"
                 height="500" loading="lazy">
             <svg *ngIf="!imageSrc" class="d-block mx-lg-auto img-fluid">
                 <use xlink:href="#aperture" />
             </svg>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" [class.text-end]="imageProfile && imagePos == 'right'">
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">{{title}}</h1>
             <p class="lead">{{content}}</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <div class="d-grid gap-2 d-md-flex" [class]="imageProfile && imagePos == 'right' ? 'justify-content-md-end' : 'justify-content-md-start'">
                 <a href="{{button1Href}}" target="{{button1Target}}">
                     <button *ngIf="button1Text" type="button"
                         class="btn btn-primary btn-lg px-4 me-md-2">{{button1Text}}</button>

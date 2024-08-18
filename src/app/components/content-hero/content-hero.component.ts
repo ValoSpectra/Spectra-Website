@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { booleanAttribute, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'comp-contentHero',
@@ -21,5 +21,7 @@ export class ContentHeroComponent {
   @Input() button2Text?: string;
   @Input() button2Href?: string;
   @Input() button2Target: "_self" | "_blank" = "_self";
+  @Input({transform: booleanAttribute}) imageProfile: boolean = false;
+  @Input({transform: booleanAttribute}) imageDarkBackground: boolean = false;
 
 }

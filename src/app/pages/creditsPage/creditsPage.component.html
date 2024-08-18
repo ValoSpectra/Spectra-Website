@@ -40,73 +40,43 @@
 <comp-NavBar></comp-NavBar>
 
 <main>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center text-bg-dark img-background" >
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center text-bg-dark img-background">
         <div class="col-md-6 p-lg-5 mx-auto my-5">
             <h1 class="display-3 fw-bold text-light">Credits</h1>
             <h3 class="fw-normal mb-3 text-light">The people that brought Spectra to life</h3>
         </div>
     </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <comp-ContentBlock
-            title="Dunkel"
-            subtitle=""
-            link="https://github.com/DarkView"
-            target="_blank"
-            image="assets/profile-pictures/dunkel.png"
-            roundImage
-            text="Development / Hosting"
-        ></comp-ContentBlock>
-        <comp-ContentBlock
-            title="Tiranthine"
-            subtitle=""
-            link="https://github.com/Tiranthine"
-            target="_blank"
-            image="assets/profile-pictures/tiranthine.png"
-            roundImage
-            text="Development / Frontend"
-        ></comp-ContentBlock>
-    </div>
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <comp-ContentBlock
-            title="Brendan"
-            subtitle=""
-            link=""
-            target="_self"
-            image="assets/profile-pictures/brendan.png"
-            roundImage
-            text="Overlay Design"
-        ></comp-ContentBlock>
-        <comp-ContentBlock
-            title="noodabooda"
-            subtitle=""
-            link=""
-            target="_self"
-            image="assets/profile-pictures/nooda.png"
-            roundImage
-            text="Overlay Design / Icon Design"
-        ></comp-ContentBlock>
-    </div>
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <comp-ContentBlock
-            title="Woohoojin"
-            subtitle=""
-            link="https://www.youtube.com/@Woohoojin"
-            target="_blank"
-            image="assets/profile-pictures/hooj.png"
-            roundImage
-            text="Sponsor"
-        ></comp-ContentBlock>
-        <comp-ContentBlock
-            title="Overwolf"
-            subtitle=""
-            link="https://www.overwolf.com/"
-            target="_blank"
-            image="assets/profile-pictures/overwolf.png"
-            roundImage
-            text="Data Engine / Support"
-        ></comp-ContentBlock>
-    </div>
+    <comp-contentDivider></comp-contentDivider>
+
+    <comp-contentHero title="Dunkel" content="Development / Hosting" imageSrc="assets/profile-pictures/dunkel.png"
+        imageAlt="Dunkel's profile picture" imagePos="right" imageProfile button1Text="GitHub"
+        button1Href="https://github.com/DarkView" button1Target="_blank"></comp-contentHero>
+    <comp-contentDivider></comp-contentDivider>
+
+    <comp-contentHero title="Tiranthine" content="Development / Frontend" imageSrc="assets/profile-pictures/tiranthine.png"
+        imageAlt="Tiranthine's profile picture" imagePos="left" imageProfile button1Text="GitHub"
+        button1Href="https://github.com/Tiranthine" button1Target="_blank"></comp-contentHero>
+    <comp-contentDivider></comp-contentDivider>
+
+    <comp-contentHero title="Brendan" content="Overlay Design" imageSrc="assets/profile-pictures/brendan.png"
+        imageAlt="Brendan's profile picture" imagePos="right" imageProfile></comp-contentHero>
+    <comp-contentDivider></comp-contentDivider>
+
+    <comp-contentHero title="noodabooda" content="Overlay Design / Icon Design" imageSrc="assets/profile-pictures/nooda.png"
+        imageAlt="noodabooda's profile picture" imagePos="left" imageProfile></comp-contentHero>
+    <comp-contentDivider></comp-contentDivider>
+
+    <comp-contentHero title="Woohoojin" content="Sponsor" imageSrc="assets/profile-pictures/hooj.png"
+        imageAlt="Woohoojin's profile picture" imagePos="right" imageProfile button1Text="YouTube"
+        button1Href="https://www.youtube.com/@Woohoojin" button1Target="_blank"></comp-contentHero>
+    <comp-contentDivider></comp-contentDivider>
+
+    <comp-contentHero title="Overwolf" content="Data Engine / Support" imageSrc="assets/profile-pictures/overwolf.png"
+        imageAlt="Overwolf logo" imagePos="left" imageProfile imageDarkBackground button1Text="Website"
+        button1Href="https://www.overwolf.com/" button1Target="_blank"></comp-contentHero>
+    <comp-contentDivider></comp-contentDivider>
+
 </main>
 
 <comp-FooterBar></comp-FooterBar>
