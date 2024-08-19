@@ -7,13 +7,34 @@
     border-radius: 8em;
 }
 
+.clipshow-wrapper {
+  position: relative;
+  min-width: 100%;
+  max-height: 100%;
+
+  overflow: hidden;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .cover-backdrop {
-    background-image: url(/assets/backgrounds/background_preview.png);
+    background-color: #000000;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
 }
 
 .cover-content {
+    position: absolute;
+    top: 0px;
     align-content: center;
 }
