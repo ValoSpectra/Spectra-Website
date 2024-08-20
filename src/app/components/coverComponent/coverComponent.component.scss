@@ -1,16 +1,20 @@
-.cover-container {
-    margin: auto;
-    max-width: 42em;
-    max-height: 24em;
-    // background-color: rgba($color: gray, $alpha: 0.7);
-    background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 0.7));
-    border-radius: 8em;
+.cover-backdrop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  overflow: hidden;
 }
 
 .clipshow-wrapper {
   position: relative;
-  min-width: 100%;
-  max-height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   overflow: hidden;
 
@@ -20,21 +24,21 @@
   justify-content: center;
 }
 
-.video {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.cover-backdrop {
-    background-color: #000000;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50%;
+.clipshow {
+  width: 100%;
+  height: 100%;
 }
 
 .cover-content {
-    position: absolute;
-    top: 0px;
-    align-content: center;
+  position: absolute;
+  top: 27%;
+}
+
+.cover-container {
+  margin: auto;
+  max-width: 42em;
+  max-height: 24em;
+  // background-color: rgba($color: gray, $alpha: 0.7);
+  background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 0.7));
+  border-radius: 8em;
 }
