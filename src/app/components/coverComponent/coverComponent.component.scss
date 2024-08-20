@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
 .cover-backdrop {
   position: absolute;
   top: 0;
@@ -41,4 +43,8 @@
   // background-color: rgba($color: gray, $alpha: 0.7);
   background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 0.7));
   border-radius: 8em;
+}
+
+.font-unbounded {
+  font-family: 'Unbounded', var(--bs-body-font-family);
 }
