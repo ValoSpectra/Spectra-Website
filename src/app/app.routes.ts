@@ -6,10 +6,18 @@ import { NgModule } from '@angular/core';
 export const routes: Routes = [
     {
         path: "",
-        component: MainPageComponent
+        component: MainPageComponent,
+        data: {
+            title: "Spectra - Spectating Valorant",
+            description: "Spectra is your all-in-one solution for an amazing looking Valorant Tournament Overlay, enabling all Organizers to display live game information."
+        }
     },
     {
         path: "credits",
-        component: CreditsPageComponent
+        component: CreditsPageComponent,
+        data: {
+            title: "Spectra - Credits",
+            description: "Everyone who has contributed to Spectra in one way or another. Developers, Designers, and more."
+        }
     }
 ];
