@@ -9,11 +9,12 @@ import { ContentDividerComponent } from '../../components/content-divider/conten
 import { FeaturesComponent } from '../../components/features/features.component';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { CommonModule } from '@angular/common';
+import { IconFeaturesComponent } from '../../components/icon-features/icon-features.component';
 
 @Component({
   selector: 'page-MainPage',
   standalone: true,
-  imports: [RouterOutlet, NavBarComponent, ContentBlockComponent, FooterBarComponent, CoverComponent, ContentHeroComponent, ContentDividerComponent, FeaturesComponent, CommonModule],
+  imports: [RouterOutlet, NavBarComponent, ContentBlockComponent, FooterBarComponent, CoverComponent, ContentHeroComponent, ContentDividerComponent, FeaturesComponent, CommonModule, IconFeaturesComponent],
   templateUrl: './mainPage.component.html',
   styleUrl: './mainPage.component.scss',
   animations: [ 

@@ -14,7 +14,7 @@ export class ContentHeroComponent {
   @Input() content!: string;
   @Input() imageSrc?: string;
   @Input() imageAlt?: string;
-  @Input() imagePos: "left" | "right" = "right";
+  @Input() imagePos: "left" | "right" | "center" = "right";
   @Input() button1Text?: string;
   @Input() button1Href?: string;
   @Input() button1Target: "_self" | "_blank" = "_self";
@@ -23,5 +23,6 @@ export class ContentHeroComponent {
   @Input() button2Target: "_self" | "_blank" = "_self";
   @Input({transform: booleanAttribute}) imageProfile: boolean = false;
   @Input({transform: booleanAttribute}) imageDarkBackground: boolean = false;
+  @Input({transform: booleanAttribute}) border: boolean = false; 
 
 }

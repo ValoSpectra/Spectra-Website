@@ -1,8 +1,10 @@
-<div class="container col-xxl-8 px-4">
-    <div class="row align-items-center g-5 py-5" [class]="imagePos == 'left' ? 'flex-lg-row' : 'flex-lg-row-reverse'">
+<div *ngIf="imagePos != 'center'" class="container col-xxl-8 px-4">
+    <div class="row align-items-center g-5 py-5" [class.flex-lg-row]="imagePos == 'left'"
+        [class.flex-lg-row-reverse]="imagePos == 'right'">
         <div class="col-10 col-sm-8 col-lg-6">
-            <img *ngIf="imageSrc" src="{{imageSrc}}" class="d-block mx-lg-auto img-fluid" [class.img-round]="imageProfile" [class.img-dark-background]="imageDarkBackground" alt="{{imageAlt}}" [width]="imageProfile ? 400 : 700"
-                height="500" loading="lazy">
+            <img *ngIf="imageSrc" src="{{imageSrc}}" class="d-block mx-lg-auto img-fluid"
+                [class.img-round]="imageProfile" [class.img-dark-background]="imageDarkBackground" alt="{{imageAlt}}"
+                [width]="imageProfile ? 400 : 700" height="500" loading="lazy">
             <svg *ngIf="!imageSrc" class="d-block mx-lg-auto img-fluid">
                 <use xlink:href="#aperture" />
             </svg>
@@ -10,7 +12,8 @@
         <div class="col-lg-6" [class.text-end]="imageProfile && imagePos == 'right'">
             <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">{{title}}</h2>
             <p class="lead fs-3 ws-preline">{{content}}</p>
-            <div class="d-grid d-md-flex" [class]="imageProfile && imagePos == 'right' ? 'justify-content-md-end' : 'justify-content-md-start'">
+            <div class="d-grid d-md-flex"
+                [class]="imageProfile && imagePos == 'right' ? 'justify-content-md-end' : 'justify-content-md-start'">
                 <a href="{{button1Href}}" target="{{button1Target}}">
                     <button *ngIf="button1Text" type="button"
                         class="btn btn-primary btn-lg px-4">{{button1Text}}</button>
@@ -20,6 +23,29 @@
                         class="btn btn-outline-secondary btn-lg px-4 ms-md-2">{{button2Text}}</button>
                 </a>
             </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="imagePos == 'center'" class="col-lg-8 px-4 pt-5 my-5 text-center centered" [class]="border ? 'rounded-3 border shadow-lg' : ''">
+    <h1 class="display-4 fw-bold text-body-emphasis">{{title}}</h1>
+    <div class="mx-auto">
+        <p class="lead fs-3">{{content}}</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a href="{{button1Href}}" target="{{button1Target}}">
+                <button *ngIf="button1Text" type="button" class="btn btn-primary btn-lg px-4">{{button1Text}}</button>
+            </a>
+            <a href="{{button2Href}}" target="{{button2Target}}">
+                <button *ngIf="button2Text" type="button"
+                    class="btn btn-outline-secondary btn-lg px-4 ms-md-2">{{button2Text}}</button>
+            </a>
+        </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+            <img *ngIf="imageSrc" src="{{imageSrc}}" class="d-block mx-lg-auto img-fluid"
+                [class.img-round]="imageProfile" [class.img-dark-background]="imageDarkBackground" alt="{{imageAlt}}"
+                [width]="imageProfile ? 400 : 700" height="500" loading="lazy">
         </div>
     </div>
 </div>

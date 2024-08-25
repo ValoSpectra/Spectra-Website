@@ -42,52 +42,33 @@
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center text-bg-dark img-background">
         <div class="col-md-6 p-lg-5 mx-auto my-5">
             <h2 class="display-3 fw-bold text-light">Live Demo</h2>
-            <h3 class="fw-normal mb-3 text-light">The people that brought Spectra to life</h3>
+            <h3 class="fw-normal mb-3 text-light">Get to know the look and feel of Spectra</h3>
         </div>
     </div>
 
     <comp-contentDivider></comp-contentDivider>
 
-    <div class="row">
-        <div class="col-md-6">
-            <h2 class="fw-bold">Live Demo</h2>
-            <p>
-                Spectra is a complex system that requires a lot of moving parts to work - so testing it and seeing
-                what it looks
-                like can be a hassle. We have created a live demo to alleviate this issue! You can interact with the
-                overlay and
-                see how it behaves in real-time. Simply click the button below to launch the demo and use the
-                buttons on the
-                demo page to modify the game state.
-                The demo is specifically designed for 1080p, so you can easily add it to your streaming software of
-                choice using
-                a browser source.
-                Cycling through the backgrounds will give you a good idea of how the overlay will look on your
-                stream - and the
-                last background is a transparent one, so you can see how it looks on top of your existing overlay.
-                While Spectra continues to evolve, we will ensure that the demo is kept up to date with the latest
-                features and
-                changes. What you see in the demo is what you get when you use Spectra!
-            </p>
-            <a href="https://auto.valospectra.com/testing" class="btn btn-primary">Launch Demo</a>
-        </div>
-        <div class="col-md-6">
-            <h2 class="fw-bold">Underpeel Grand Finals</h2>
-            <p>
-                Prefer a VOD? Check out the video below to see the overlay in action, live from the Underpeel Grand
-                Finals! We strive to provide VODs that are up to date with the latest features and changes to Spectra, however that is not always possible.
-                We recommend using the live demo for the most accurate representation of what you can expect when using Spectra.
-            </p>
-            <a href="https://www.youtube.com/watch?v=Q8vJ9Zt1Z1Y" class="btn btn-primary">Watch VOD</a>
-        </div>
-        Convinced?
-        Simply contact us on our Discord server to get started with Spectra!
+    <!-- <comp-contentHero title="Live Demo" imageSrc="assets/backgrounds/liveDemo_preview.webp" imageAlt="Spectra Live-Demo Preview" imagePos="center"></comp-contentHero> -->
+    <comp-titleFeatures></comp-titleFeatures>
+
+    <comp-contentDivider></comp-contentDivider>
+
+    <comp-contentHero title="Underpeel Grand Finals" content="Prefer a VOD? Check out the video below to see the overlay in action, live from the Underpeel Grand Finals! 
+        Because Spectra is still under development, the what you see in the video might not always be the most current version of the overlay." imageSrc="assets/profile-pictures/underpeel-logo.png" imageAlt="Youtube Icon" imagePos="left"
+        button1Text="Watch VOD" button1Href="https://youtu.be/VAAFiwqgxCA?t=4175"
+        button1Target="_blank"></comp-contentHero>
+
+    <comp-contentDivider></comp-contentDivider>
+
+    <comp-contentHero title="Convinced?"
+        content="Simply contact us on our Discord server to get started with Spectra!
         We're always happy to help and can provide you with everything you need to get started right away.
-        With ready to use servers in Europe and North America, we've got you covered no matter where you are - completely free of charge.
-        If you prefer, you can even self-host Spectra - we provide all the necessary files on our GitHub repositories.
-    </div>
+        With ready to use servers in Europe and North America, we've got you covered no matter where you are -
+        completely free of charge. If you prefer, you can even self-host Spectra - we provide all the necessary 
+        files on our GitHub repositories." imagePos="center" button1Text="Join the Discord Server" button1Href="https://discord.gg/nWWXqqK6tz" button1Target="_blank"></comp-contentHero>
 
     <comp-contentDivider></comp-contentDivider>
+
 
 </main>
 
