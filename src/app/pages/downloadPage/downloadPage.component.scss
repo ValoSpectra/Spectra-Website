@@ -1,0 +1,31 @@
+.container {
+  max-width: 960px;
+}
+
+.icon-link > .bi {
+  width: 0.75em;
+  height: 0.75em;
+}
+
+/*
+   * Custom translucent site header
+   */
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color 0.15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-image {
+  max-width: 50em;
+  max-height: 20em;
+}
